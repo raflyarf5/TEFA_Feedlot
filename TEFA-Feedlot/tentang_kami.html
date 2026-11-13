@@ -3,18 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Tentang Kami</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <nav>
+      <div class="judul">
+        <h2 class="judul-tefa">TEFA Feedlot dan Sapi Perah</h2>
+        <p class="judul-poltek">Politeknik Negeri Jember</p>
+      </div>
+      <nav class="navigasi">
         <ul class="menu">
           <li class="beranda"><a href="beranda.html"> Beranda </a></li>
           <li class="layanan"><a href="layanan.html"> Layanan </a></li>
           <li class="produk"><a href="produk.html"> Produk </a></li>
-          <li class="informasi">Informasi</li>
+          <li class="dropdown">
+            <button class="dropdown-btn" id="tombol-informasi" type="button">
+              Informasi
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu" id="menu-informasi">
+              <li><a href="hubungi_kami.html">Hubungi kami</a></li>
+              <li><a href="tentang_kami.html">Tentang Kami</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
+    <main></main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-isi">
+        <div class="footer-TEFA">
+          <h2 class="footer-poltek">TEFA Feedlot dan Sapi Perah</h2>
+          <p class="footer-teks">
+            Teaching Factory yang berkomitmen pada peternakan, pemberdayaan
+            masyarakat, dan penyediaan produk peternakan berkualitas.
+          </p>
+        </div>
+        <div class="footer-tautan">
+          <h3 class="tautan">Tautan</h3>
+          <ul class="footer-nav">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="hubungi_kami.html">Hubungi Kami</a></li>
+            <li><a href="tentang_kami.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 class="hubungi-kami">Hubungi Kami</h3>
+          <ul class="footer-nav-contact">
+            <li>+6222333443</li>
+            <li>peternakan@polije.ac.id</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bawah">
+        &copy; 2026 TEFA Feedlot dan Sapi Perah · Politeknik Negeri Jember
+      </p>
+    </footer>
+    <script src="/TEFA-Feedlot/js/script.js"></script>
   </body>
 </html>

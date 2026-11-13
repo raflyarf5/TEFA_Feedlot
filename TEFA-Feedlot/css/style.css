@@ -10,7 +10,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 65px 0px 34px;
+  padding: 0px 24px 0px 24px;
+  height: var(--tinggi-header);
+}
+
+:root {
+  --tinggi-header: 103px;
 }
 
 body {
@@ -24,7 +29,7 @@ body {
   min-height: 100vh;
 }
 
-main {
+.beranda-main {
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(/TEFA-Feedlot/assets/TEFA.jpeg);
@@ -34,14 +39,13 @@ main {
   background-position: right;
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - var(--tinggi-header));
 }
 
 footer {
+  padding: 48px 29px 0;
   background-color: #386641;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 25px 65px 25px 29px;
+  color: #fff;
 }
 
 a {
@@ -49,22 +53,17 @@ a {
   text-decoration: none;
 }
 
-li {
-  padding: 12px;
-}
-
 /* Navigasi */
 .judul {
-  padding: 0px 0px 0px 3px;
+  padding: 0;
 }
 
 .judul-tefa {
-  padding: 6px;
+  padding: 0;
 }
 
 .judul-poltek {
-  padding: 6px;
-  padding-bottom: 20px;
+  padding: 0 6px 0 6px;
 }
 
 .menu {
@@ -72,6 +71,22 @@ li {
   display: flex;
   align-items: center;
   gap: 34px;
+}
+
+.menu a:hover {
+  text-decoration: underline 1px;
+  color: #fff;
+  text-underline-offset: 4px;
+}
+
+.dropdown button:hover {
+  text-decoration: underline 1px;
+  color: #fff;
+  text-underline-offset: 4px;
+}
+
+nav li {
+  padding: 0;
 }
 
 .dropdown {
@@ -92,28 +107,51 @@ li {
 svg {
   width: 16px;
   height: 16px;
+  transition: transform 0.25s ease;
 }
 
 .dropdown-menu {
-  display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -25px;
   z-index: 10px;
-  width: 124px;
+  width: 154px;
   margin: 12px 0 0;
   padding: 8px 10px;
   list-style: none;
   background-color: #386641;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s;
+}
+
+.dropdown-menu li {
+  padding: 6px;
 }
 
 .dropdown-menu.buka {
   display: block;
 }
-/* Main */
 
+.dropdown:hover .dropdown-btn svg,
+.dropdown-menu.buka ~ .dropdown-btn svg {
+  transform: rotate(180deg);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown.buka .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* Main */
+/* Beranda */
 .tefa-feedlot {
   display: flex;
   height: 100%;
@@ -142,64 +180,153 @@ svg {
   background-color: #25402b;
 }
 
-/* Footer */
+/* Layanan */
 
-.footer-TEFA,
-.footer-tautan,
-.footer-nav-contact {
+/* main */
+.layanan {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.layanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.layanan-teks {
+  font-size: 36px;
+  font-weight: bold;
+  color: #386641;
+}
+
+.layanan-subteks {
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+}
+
+.layanan-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.layanan-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.layanan-card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.layanan-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 200px;
+  margin: 50px;
+}
+
+/* Footer */
+
+.footer-isi {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline 1px;
+  text-underline-offset: 4px;
 }
 
 .footer-poltek {
-  padding: 0px;
+  margin: 0 0 14px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .footer-teks {
-  padding: 0;
-  width: 450px;
-}
-.footer-tautan {
-  padding: 0;
-}
-
-.tautan {
-  padding-left: 100px;
-}
-
-.footer-nav {
-  list-style-type: none;
-  column-gap: 40px;
-  columns: 2;
-  padding: 0px;
-  margin: 0px;
-}
-
-footer-nav.li {
-  padding: 0;
-  line-height: 19px;
-}
-
-.footer-contact {
-  display: flex;
-}
-
-.footer-nav-contact {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 0;
+  max-width: 380px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-}
-
+.tautan,
 .hubungi-kami {
+  margin: 0 0 16px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.footer-nav,
+.footer-nav-contact {
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+}
+
+.footer-nav li,
+.footer-nav-contact li {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer-bawah {
+  max-width: 2000px;
+  margin: 40px auto 0;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
