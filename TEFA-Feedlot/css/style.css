@@ -36,7 +36,7 @@ main {
 .beranda-main {
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(/TEFA-Feedlot/assets/TEFA.jpeg);
+    url("../assets/TEFA.jpeg");
   flex: 1;
   background-size: cover;
   background-repeat: no-repeat;
