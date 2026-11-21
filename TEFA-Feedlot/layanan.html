@@ -1,221 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Layanan</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="judul">
-        <h2 class="judul-tefa">TEFA Feedlot dan Sapi Perah</h2>
-        <p class="judul-poltek">Politeknik Negeri Jember</p>
-      </div>
-      <nav class="navigasi">
-        <ul class="menu">
-          <li class="beranda"><a href="beranda.html"> Beranda </a></li>
-          <li class="layanan"><a href="layanan.html"> Layanan </a></li>
-          <li class="produk"><a href="produk.html"> Produk </a></li>
-          <li class="dropdown">
-            <button class="dropdown-btn" id="tombol-informasi" type="button">
-              Informasi
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                />
-              </svg>
-            </button>
-            <ul class="dropdown-menu" id="menu-informasi">
-              <li><a href="hubungi_kami.html">Hubungi Kami </a></li>
-              <li><a href="tentang_kami.html">Tentang Kami </a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Konten -->
-    <main>
-      <section class="layanan-atas">
-        <div class="layanan">
-          <h1 class="judul2">LAYANAN</h1>
-          <p class="subjudul2">Layanan Yang Tersedia Di TEFA</p>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Layanan</title>
+</head>
 
-      <section class="layanan-container">
-        <button type="button" class="layanan-card" data-popup="popup-magang">
-          <img src="assets/MAGANG.jpeg" alt="Magang" />
-          <h2>Magang</h2>
-          <p>
-            Program magang bagi mahasiswa dan pelajar yang ingin belajar
-            langsung pengelolaan feedlot dan sapi perah.
-          </p>
-        </button>
-        <button
-          type="button"
-          class="layanan-card"
-          data-popup="popup-penelitian"
-        >
-          <img src="img/penelitian.png" alt="Penelitian" />
-          <h2>Penelitian</h2>
-          <p>
-            Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau
-            riset institusi.
-          </p>
-        </button>
-        <button type="button" class="layanan-card" data-popup="popup-wisata">
-          <img src="assets/WISATA.jpeg" alt="Wisata" />
-          <h2>Wisata Edukasi</h2>
-          <p>
-            Kunjungan edukatif untuk sekolah dan kelompok, melihat proses
-            pemeliharaan, pemerahan, dan pakan ternak.
-          </p>
-        </button>
-      </section>
-    </main>
-
-    <!-- Pop Up -->
-
-    <div class="popup-overlay" id="popup-magang">
-      <div class="popup-kotak">
-        <h3>Magang</h3>
-        <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
-        <p>
-          Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau riset
-          institusi.
-        </p>
-        <a href="#" class="popup-daftar"
-          >Daftar Via Google Form
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-box-arrow-up-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-            />
-          </svg>
-        </a>
-        <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
-      </div>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="judul">
+      <h2 class="judul-tefa">TEFA Feedlot dan Sapi Perah</h2>
+      <p class="judul-poltek">Politeknik Negeri Jember</p>
     </div>
+    <nav class="navigasi">
+      <ul class="menu">
+        <li class="beranda"><a href="beranda.html"> Beranda </a></li>
+        <li class="layanan"><a href="layanan.html"> Layanan </a></li>
+        <li class="produk"><a href="produk.html"> Produk </a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn" id="tombol-informasi" type="button">
+            Informasi
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu" id="menu-informasi">
+            <li><a href="hubungi_kami.html">Hubungi Kami </a></li>
+            <li><a href="tentang_kami.html">Tentang Kami </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="popup-overlay" id="popup-penelitian">
-      <div class="popup-kotak">
-        <h3>Penelitian</h3>
-        <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
-        <p>
-          Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau riset
-          institusi.
-        </p>
-        <a href="#" class="popup-daftar"
-          >Daftar Via Google Form
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-box-arrow-up-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-            />
-          </svg>
-        </a>
-        <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
+  <!-- Konten -->
+  <main>
+    <section class="layanan-atas">
+      <div class="layanan">
+        <h1 class="judul2">LAYANAN</h1>
+        <p class="subjudul2">Layanan Yang Tersedia Di TEFA</p>
       </div>
-    </div>
+    </section>
 
-    <div class="popup-overlay" id="popup-wisata">
-      <div class="popup-kotak">
-        <h3>Wisata Edukasi</h3>
-        <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
+    <section class="layanan-container">
+      <button type="button" class="layanan-card" data-popup="popup-magang">
+        <img src="assets/MAGANG.jpeg" alt="Magang" />
+        <h2>Magang</h2>
+        <p>
+          Program magang bagi mahasiswa dan pelajar yang ingin belajar
+          langsung pengelolaan feedlot dan sapi perah.
+        </p>
+      </button>
+      <button type="button" class="layanan-card" data-popup="popup-penelitian">
+        <img src="img/penelitian.png" alt="Penelitian" />
+        <h2>Penelitian</h2>
+        <p>
+          Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau
+          riset institusi.
+        </p>
+      </button>
+      <button type="button" class="layanan-card" data-popup="popup-wisata">
+        <img src="assets/WISATA.jpeg" alt="Wisata" />
+        <h2>Wisata Edukasi</h2>
         <p>
           Kunjungan edukatif untuk sekolah dan kelompok, melihat proses
           pemeliharaan, pemerahan, dan pakan ternak.
         </p>
-        <a href="#" class="popup-daftar"
-          >Daftar Via Google Form
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-box-arrow-up-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-            />
-          </svg>
-        </a>
-        <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
+      </button>
+    </section>
+  </main>
+
+  <!-- Pop Up -->
+
+  <div class="popup-overlay" id="popup-magang">
+    <div class="popup-kotak">
+      <h3>Magang</h3>
+      <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
+      <p>
+        Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau riset
+        institusi.
+      </p>
+      <a href="#" class="popup-daftar">Daftar Via Google Form
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+          <path fill-rule="evenodd"
+            d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+        </svg>
+      </a>
+      <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popup-penelitian">
+    <div class="popup-kotak">
+      <h3>Penelitian</h3>
+      <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
+      <p>
+        Fasilitas kandang dan data peternakan untuk skripsi, tesis, atau riset
+        institusi.
+      </p>
+      <a href="#" class="popup-daftar">Daftar Via Google Form
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+          <path fill-rule="evenodd"
+            d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+        </svg>
+      </a>
+      <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popup-wisata">
+    <div class="popup-kotak">
+      <h3>Wisata Edukasi</h3>
+      <button class="popup-tutup" type="button" aria-label="Tutup">X</button>
+      <p>
+        Kunjungan edukatif untuk sekolah dan kelompok, melihat proses
+        pemeliharaan, pemerahan, dan pakan ternak.
+      </p>
+      <a href="#" class="popup-daftar">Daftar Via Google Form
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+          <path fill-rule="evenodd"
+            d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+        </svg>
+      </a>
+      <p class="popup-tanya">Ada pertanyaan? peternakan@polije.ac.id</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer-isi">
+      <div class="footer-TEFA">
+        <h2 class="footer-poltek">TEFA Feedlot dan Sapi Perah</h2>
+        <p class="footer-teks">
+          Teaching Factory yang berkomitmen pada peternakan, pemberdayaan
+          masyarakat, dan penyediaan produk peternakan berkualitas.
+        </p>
+      </div>
+      <div class="footer-tautan">
+        <h3 class="tautan">Tautan</h3>
+        <ul class="footer-nav">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="hubungi_kami.html">Hubungi Kami</a></li>
+          <li><a href="tentang_kami.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="hubungi-kami">Hubungi Kami</h3>
+        <ul class="footer-nav-contact">
+          <li>+6222333443</li>
+          <li>peternakan@polije.ac.id</li>
+        </ul>
       </div>
     </div>
+    <p class="footer-bawah">
+      &copy; 2026 TEFA Feedlot dan Sapi Perah · Politeknik Negeri Jember
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
 
-    <!-- Footer -->
-
-    <footer>
-      <div class="footer-isi">
-        <div class="footer-TEFA">
-          <h2 class="footer-poltek">TEFA Feedlot dan Sapi Perah</h2>
-          <p class="footer-teks">
-            Teaching Factory yang berkomitmen pada peternakan, pemberdayaan
-            masyarakat, dan penyediaan produk peternakan berkualitas.
-          </p>
-        </div>
-        <div class="footer-tautan">
-          <h3 class="tautan">Tautan</h3>
-          <ul class="footer-nav">
-            <li><a href="beranda.html">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="produk.html">Produk</a></li>
-            <li><a href="hubungi_kami.html">Hubungi Kami</a></li>
-            <li><a href="tentang_kami.html">Tentang Kami</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h3 class="hubungi-kami">Hubungi Kami</h3>
-          <ul class="footer-nav-contact">
-            <li>+6222333443</li>
-            <li>peternakan@polije.ac.id</li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer-bawah">
-        &copy; 2026 TEFA Feedlot dan Sapi Perah · Politeknik Negeri Jember
-      </p>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
 </html>
