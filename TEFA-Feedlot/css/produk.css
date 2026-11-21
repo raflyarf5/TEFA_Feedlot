@@ -1,0 +1,41 @@
+.Produk-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px;
+}
+
+.Produk-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  height: 392px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.Produk-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+}
+.Produk-card img {
+  width: 100%;
+  height: 253px;
+  object-fit: cover;
+  display: block;
+}
+
+.Produk-card h2 {
+  margin-top: auto;
+  margin-bottom: 105px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}

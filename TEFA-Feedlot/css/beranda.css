@@ -1,0 +1,44 @@
+.beranda-main {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../assets/TEFA.jpeg");
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--tinggi-header));
+}
+
+.tefa-feedlot {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tefa-teks {
+  padding: 24px;
+  width: 600px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.tombol-tk {
+  padding: 10px 18px 10px 18px;
+  margin: 0;
+  color: white;
+  background-color: #386641;
+  border-style: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.tombol-tk:hover {
+  background-color: #295232;
+}

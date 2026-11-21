@@ -1,113 +1,139 @@
-* {
-  margin: 0;
+.layanan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.layanan-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  padding: 20px;
+  gap: 200px;
+  margin: 50px;
+}
+
+/* mengatur besar kecilnya card */
+.layanan-card {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 12px;
   padding: 0;
   box-sizing: border-box;
-}
-
-header {
-  background-color: #386641;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 65px 0px 34px;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0px;
-  flex: 1;
-  color: rgb(255, 255, 255);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-
-
-main {
-  flex: 1;
-  background-size: cover;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-
-
-footer {
-  background-color: #386641;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 25px 65px 25px 29px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-li {
-  padding: 12px;
-}
-
-/* Navigasi */
-.judul {
-  padding: 0px 0px 0px 3px;
-}
-
-.judul-tefa {
-  padding: 6px;
-}
-
-.judul-poltek {
-  padding: 6px;
-  padding-bottom: 20px;
-}
-
-.menu {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 34px;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
   cursor: pointer;
+  border-style: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-svg {
-  width: 16px;
-  height: 16px;
+.layanan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+}
+/* mengatur posisi teks di dalam card */
+.layanan-card h2,
+.layanan-card p {
+  color: black;
+  margin-top: 0px;
+  font-weight: normal;
+  padding: 0 20px;
+  font-size: medium;
 }
 
-.dropdown-menu {
+.layanan-card p {
+  margin-bottom: 20px;
+  font-size: small;
+}
+/* mengatur gambar di dalam card */
+
+.layanan-card img {
+  width: 100%;
+  height: 270px;
+  margin: 0;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Pop Up Layanan */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
   display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  z-index: 10px;
-  width: 124px;
-  margin: 12px 0 0;
-  padding: 8px 10px;
-  list-style: none;
-  background-color: #386641;
+  z-index: 10;
+  color: black;
+}
+
+.popup-overlay.buka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-kotak {
+  width: 673px;
+  height: 493px;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 30px;
+  background: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.dropdown-menu.buka {
-  display: block;
+.popup-kotak h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #386641;
+  margin-bottom: 16px;
 }
 
+.popup-kotak p {
+  font-size: 16px;
+}
+
+.popup-tutup {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  background: transparent;
+  top: 23px;
+  right: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: inherit;
+}
+
+.popup-daftar {
+  background-color: #386641;
+  width: 260px;
+  height: 63px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: auto;
+  align-self: center;
+  gap: 12px;
+}
+
+.popup-tanya {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}

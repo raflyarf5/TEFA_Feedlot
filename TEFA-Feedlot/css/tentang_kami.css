@@ -1,0 +1,65 @@
+.tentang-atas {
+  background: #ffffff;
+  text-align: center;
+}
+
+.judul2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #386641;
+}
+
+.tentang-kolom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 0 80px 0 58px;
+}
+
+.tentang-teks {
+  max-width: 800px;
+}
+
+.tentang-gambar {
+  flex-shrink: 0;
+  width: 500px;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tentang-gambar:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+}
+
+.tentang-gambar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.tentang-isi h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.tentang-isi h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 32px;
+}
+
+.tentang-isi p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4b5563;
+}
