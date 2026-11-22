@@ -29,14 +29,9 @@
 }
 
 .tombol-tk {
-  padding: 10px 18px 10px 18px;
-  margin: 0;
   color: white;
   background-color: #386641;
-  border-style: none;
   border-radius: 24px;
-  cursor: pointer;
-  font-size: medium;
 }
 
 .tombol-tk:hover {

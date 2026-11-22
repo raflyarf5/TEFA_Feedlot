@@ -117,19 +117,20 @@
 }
 
 .popup-daftar {
-  background-color: #386641;
   width: 260px;
   height: 63px;
-  border-radius: 10px;
-  color: white;
-  font-size: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   margin-top: auto;
   align-self: center;
   gap: 12px;
+  --bs-btn-color: #fff;
+  --bs-btn-border-radius: 10px;
+  --bs-btn-border-color: #386641;
+  --bs-btn-hover-bg: #295232;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-bg: #386641;
 }
 
 .popup-tanya {
