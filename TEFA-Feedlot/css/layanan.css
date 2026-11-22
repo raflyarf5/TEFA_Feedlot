@@ -64,58 +64,6 @@
 
 /* Pop Up Layanan */
 
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-  display: none;
-  z-index: 10;
-  color: black;
-}
-
-.popup-overlay.buka {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.popup-kotak {
-  width: 673px;
-  height: 493px;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
-  padding: 30px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.popup-kotak h3 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #386641;
-  margin-bottom: 16px;
-}
-
-.popup-kotak p {
-  font-size: 16px;
-}
-
-.popup-tutup {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  border: 1px solid black;
-  background: transparent;
-  top: 23px;
-  right: 22px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 30px;
-  font-family: inherit;
-}
-
 .popup-daftar {
   width: 260px;
   height: 63px;
@@ -131,6 +79,17 @@
   --bs-btn-hover-bg: #295232;
   --bs-btn-hover-color: #fff;
   --bs-btn-bg: #386641;
+}
+
+.modal-content {
+  --bs-modal-color: black;
+  --bs-modal-header-border-width: 0;
+  --bs-modal-footer-border-width: 0;
+}
+.modal-title {
+  color: #386641;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .popup-tanya {
