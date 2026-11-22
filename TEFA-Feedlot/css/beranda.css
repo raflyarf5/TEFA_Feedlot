@@ -42,3 +42,12 @@
 .tombol-tk:hover {
   background-color: #295232;
 }
+
+/* ===== Tampilan HP ===== */
+@media (max-width: 768px) {
+  .tefa-teks {
+    width: 100%;
+    padding: 16px;
+    font-size: 22px;
+  }
+}

@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 310px;
   height: 392px;
   background: white;
@@ -32,10 +33,35 @@
   display: block;
 }
 
-.Produk-card h2 {
-  margin-top: auto;
-  margin-bottom: 105px;
-  font-size: 20px;
-  font-weight: 400;
+.Produk-card h2,
+.Produk-card p {
   color: black;
+  font-weight: normal;
+  padding: 12px 0 12px 0;
+  font-size: medium;
+}
+
+.Produk-card h2 {
+  margin: 0;
+}
+
+.Produk-card p {
+  margin-bottom: 20px;
+  font-size: small;
+}
+
+/* ===== Tampilan HP ===== */
+@media (max-width: 768px) {
+  .Produk-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .Produk-card {
+    width: 100%;
+    max-width: 310px;
+  }
 }
