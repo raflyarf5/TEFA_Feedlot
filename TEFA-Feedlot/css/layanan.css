@@ -9,19 +9,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
-.layanan-container {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  padding: 20px;
-  gap: 200px;
-  margin: 50px;
-}
-
 /* mengatur besar kecilnya card */
 .layanan-card {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 12px;
   padding: 0;
@@ -98,41 +90,17 @@
   color: black;
 }
 
+.layanan-bawah .container-fluid {
+  padding-left: clamp(20px, 3.5vw, 50px);
+  padding-right: clamp(20px, 3.5vw, 50px);
+}
+
+.layanan-bawah .row {
+  --bs-gutter-y: 40px;
+}
+
 /* ===== Tampilan HP ===== */
 @media (max-width: 768px) {
-  .layanan-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0 16px;
-  }
-
-  .layanan-card {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .popup-kotak {
-    width: calc(100% - 32px);
-    height: auto;
-    max-height: 90vh;
-    overflow-y: auto;
-    padding: 20px;
-  }
-
-  .popup-kotak h3 {
-    padding-right: 56px;
-  }
-
-  .popup-tutup {
-    width: 40px;
-    height: 40px;
-    top: 16px;
-    right: 16px;
-    font-size: 22px;
-  }
-
   .popup-daftar {
     margin-top: 24px;
     width: 100%;
