@@ -5,8 +5,9 @@
   margin: 0;
 }
 
-.konten-kanan {
-  padding: 6px 100px 24px 0;
+.kontak-bawah .container-fluid {
+  padding-left: clamp(20px, 3.5vw, 58px);
+  padding-right: clamp(20px, 3.5vw, 58px);
 }
 
 .kontak-kiri {
@@ -14,9 +15,9 @@
   flex-direction: column;
   margin: 0;
 }
+
 .kontak-map {
   width: 100%;
-  width: 534px;
   height: 476px;
   border: 0;
   display: block;
@@ -24,11 +25,6 @@
   padding: 10px;
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-}
-
-.kontak-bawah .container-fluid {
-  padding-left: clamp(20px, 3.5vw, 58px);
-  padding-right: clamp(20px, 3.5vw, 58px);
 }
 
 .teks {
@@ -48,4 +44,21 @@
   color: black;
   width: 300px;
   padding: 6px 0 6px 100px;
+}
+
+/* ===== Tampilan HP ===== */
+@media (max-width: 768px) {
+  .kontak-map {
+    height: 320px;
+  }
+
+  .teks {
+    margin-top: 8px;
+    padding: 6px 0 4px;
+  }
+
+  .subteks {
+    width: auto;
+    padding: 4px 0 8px;
+  }
 }

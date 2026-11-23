@@ -14,38 +14,73 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="judul">
-        <h2 class="judul-tefa">TEFA Feedlot dan Sapi Perah</h2>
-        <p class="judul-poltek">Politeknik Negeri Jember</p>
-      </div>
-      <nav class="navigasi">
-        <ul class="menu">
-          <li class="beranda"><a href="beranda.html"> Beranda </a></li>
-          <li class="layanan"><a href="layanan.html"> Layanan </a></li>
-          <li class="produk"><a href="produk.html"> Produk </a></li>
-          <li class="dropdown">
-            <button class="dropdown-btn" id="tombol-informasi" type="button">
-              Informasi
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                />
-              </svg>
-            </button>
-            <ul class="dropdown-menu" id="menu-informasi">
-              <li><a href="hubungi_kami.html">Hubungi kami</a></li>
-              <li><a href="tentang_kami.html">Tentang Kami</a></li>
+      <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="judul">
+            <h2 class="judul-tefa">TEFA Feedlot dan Sapi Perah</h2>
+            <p class="judul-poltek">Politeknik Negeri Jember</p>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu-utama"
+            aria-controls="menu-utama"
+            aria-expanded="false"
+            aria-label="Buka menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-utama">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="beranda.html" class="nav-link"> Beranda </a>
+              </li>
+              <li class="nav-item">
+                <a href="layanan.html" class="nav-link"> Layanan </a>
+              </li>
+              <li class="nav-item">
+                <a href="produk.html" class="nav-link"> Produk </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Informasi
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="hubungi_kami.html"
+                      >Hubungi Kami
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tentang_kami.html"
+                      >Tentang Kami
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
