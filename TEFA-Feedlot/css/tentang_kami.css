@@ -56,6 +56,36 @@
   color: #4b5563;
 }
 
+/** card **/
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;   /* turun ke bawah kalau layar sempit */
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 280px;   /* lebar minimal 280px, sisanya dibagi rata */
+  max-width: 320px;
+}
+
+  .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  }
+
+.card img {
+  width: 100%;
+  display: block;
+  height: 420px;
+}
+
+
 /* ===== Tampilan HP ===== */
 @media (max-width: 768px) {
   .judul2 {
