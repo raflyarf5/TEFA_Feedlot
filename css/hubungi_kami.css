@@ -1,28 +1,23 @@
 /* Hubungi Kami */
-.kontak {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 81px 0 58px;
-}
-
 .kontak-atas {
   background: #ffffff;
   text-align: center;
   margin: 0;
 }
 
-.konten-kanan {
-  padding: 6px 100px 24px 0;
+.kontak-bawah .container-fluid {
+  padding-left: clamp(20px, 3.5vw, 58px);
+  padding-right: clamp(20px, 3.5vw, 58px);
 }
 
 .kontak-kiri {
-  width: 640px;
   display: flex;
   flex-direction: column;
   margin: 0;
 }
+
 .kontak-map {
-  width: 534px;
+  width: 100%;
   height: 476px;
   border: 0;
   display: block;
@@ -53,14 +48,8 @@
 
 /* ===== Tampilan HP ===== */
 @media (max-width: 768px) {
-  .kontak {
-    flex-direction: column;
-    gap: 16px;
-    padding: 0 16px;
-  }
-
-  .kontak-kiri {
-    width: 100%;
+  .kontak-map {
+    height: 320px;
   }
 
   .teks {
@@ -71,10 +60,5 @@
   .subteks {
     width: auto;
     padding: 4px 0 8px;
-  }
-
-  .kontak-map {
-    width: 100%;
-    height: 320px;
   }
 }
