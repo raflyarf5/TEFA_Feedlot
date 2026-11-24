@@ -71,8 +71,8 @@ Contoh dengan GitHub Pages: buka **Settings → Pages**, pilih branch `main` dan
 
 ## Lisensi
 
-[Pilih lisensi, misalnya MIT.] Lihat file `LICENSE`.
+Hak cipta © 2026 Nama Kelompok (Kelompok 4 Workshop Desain Aplikasi Gol G). Seluruh hak dilindungi.
 
 ## Kontak
 
-[Nama] • [email atau akun media sosial]
+[Rafly Arif] • [raflyarif715@gmail.com]
