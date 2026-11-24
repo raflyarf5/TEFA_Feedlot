@@ -114,8 +114,10 @@
                   <h2 class="teks"><b>Email</b></h2>
                   <p class="subteks">peternakan@polije.ac.id</p>
                 </div>
-              </div>
-            </div>
+                </div>
+                </div>
+            
+            <!--peta-->
             <div class="col-12 col-md-6">
               <div class="kontak-kanan">
                 <iframe
@@ -128,12 +130,47 @@
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                 ></iframe>
-                <!-- peta -->
-              </div>
             </div>
           </div>
         </div>
       </section>
+
+<!--kotak saran-->
+
+<link rel="stylesheet" href="hubungi_kami.css">
+</head>
+<body>
+
+  <div class="form-card">
+    <div class="label-atas">Ada Saran ?</div>
+    <h2>Kirim Saran</h2>
+    <p class="deskripsi">
+      Sampaikan pertanyaan, keperluan informasi, kerja sama, atau masukan untuk kami.
+    </p>
+
+    <form id="formKontak">
+      <div class="baris">
+        <div class="kolom">
+          <label for="nama">Nama Lengkap <span>*</span></label>
+          <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="kolom">
+          <label for="email">Alamat Email <span>*</span></label>
+          <input type="email" id="email" placeholder="nama@email.com" required>
+        </div>
+      </div>
+
+      <div class="kolom">
+        <label for="pesan">Pesan / Uraian <span>*</span></label>
+        <textarea id="pesan" placeholder="Tuliskan isi pesan atau pertanyaan Anda secara rinci..." required></textarea>
+      </div>
+
+      <button type="submit">
+        <i class="fa-solid fa-paper-plane"></i> Kirim Pesan via Email
+      </button>
+    </form>
+  </div>
+
     </main>
     <!-- Footer -->
     <footer>

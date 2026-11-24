@@ -61,14 +61,17 @@
 .card-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;   /* turun ke bawah kalau layar sempit */
+  flex-wrap: wrap;   
   gap: 16px;
   justify-content: center;
 }
 
 .card {
-  flex: 1 1 280px;   /* lebar minimal 280px, sisanya dibagi rata */
+  flex: 1 1 280px;   
   max-width: 320px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-left: 100px;
 }
 
   .card:hover {
@@ -82,7 +85,7 @@
 .card img {
   width: 100%;
   display: block;
-  height: 420px;
+  height: 500px;
 }
 
 

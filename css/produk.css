@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 310px;
+  max-width: 400px;
   margin: 0 auto;
   height: 392px;
   background: white;
@@ -40,9 +40,10 @@
 }
 
 .Produk-card p {
-  margin-bottom: 20px;
-  font-size: small;
+  font-size: 80%;
+  margin-top: auto;
 }
+
 
 .Produk-bawah .container-fluid {
   padding-left: clamp(20px, 3.5vw, 50px);
@@ -53,3 +54,4 @@
   --bs-gutter-x: 40px;
   --bs-gutter-y: 40px;
 }
+
