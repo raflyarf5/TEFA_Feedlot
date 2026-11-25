@@ -1,109 +1,109 @@
-.layanan-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-}
-
-/* mengatur besar kecilnya card */
-.layanan-card {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  padding: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-style: none;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.layanan-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
-}
-/* mengatur posisi teks di dalam card */
-.layanan-card h2,
-.layanan-card p {
-  color: black;
-  margin-top: 0px;
-  font-weight: normal;
-  padding: 0 20px;
-  font-size: medium;
-}
-
-.layanan-card p {
-  margin-bottom: 20px;
-  font-size: small;
-}
-/* mengatur gambar di dalam card */
-
-.layanan-card img {
-  width: 100%;
-  height: 270px;
-  margin: 0;
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
-}
-
-/* Pop Up Layanan */
-
-.popup-daftar {
-  width: 260px;
-  height: 63px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: auto;
-  align-self: center;
-  gap: 12px;
-  --bs-btn-color: #fff;
-  --bs-btn-border-radius: 10px;
-  --bs-btn-border-color: #386641;
-  --bs-btn-hover-bg: #295232;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-bg: #386641;
-}
-
-.modal-content {
-  --bs-modal-color: black;
-  --bs-modal-header-border-width: 0;
-  --bs-modal-footer-border-width: 0;
-}
-.modal-title {
-  color: #386641;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.popup-tanya {
-  text-align: center;
-  margin-top: 20px;
-  color: black;
-}
-
-.layanan-bawah .container-fluid {
-  padding-left: clamp(20px, 3.5vw, 50px);
-  padding-right: clamp(20px, 3.5vw, 50px);
-}
-
-.layanan-bawah .row {
-  --bs-gutter-y: 40px;
-}
-
-/* ===== Tampilan HP ===== */
-@media (max-width: 768px) {
-  .popup-daftar {
-    margin-top: 24px;
-    width: 100%;
-    max-width: 260px;
+  .layanan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   }
-}
+
+  /* mengatur besar kecilnya card */
+  .layanan-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-style: none;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+  }
+  /* mengatur posisi teks di dalam card */
+  .layanan-card h2,
+  .layanan-card p {
+    color: black;
+    margin-top: 0px;
+    font-weight: normal;
+    padding: 0 20px;
+    font-size: medium;
+  }
+
+  .layanan-card p {
+    margin-bottom: 20px;
+    font-size: small;
+  }
+  /* mengatur gambar di dalam card */
+
+  .layanan-card img {
+    width: 100%;
+    height: 270px;
+    margin: 0;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+
+  /* Pop Up Layanan */
+
+  .popup-daftar {
+    width: 260px;
+    height: 63px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    align-self: center;
+    gap: 12px;
+    --bs-btn-color: #fff;
+    --bs-btn-border-radius: 10px;
+    --bs-btn-border-color: #386641;
+    --bs-btn-hover-bg: #295232;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-bg: #386641;
+  }
+
+  .modal-content {
+    --bs-modal-color: black;
+    --bs-modal-header-border-width: 0;
+    --bs-modal-footer-border-width: 0;
+  }
+  .modal-title {
+    color: #386641;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .popup-tanya {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+  }
+
+  .layanan-bawah .container-fluid {
+    padding-left: clamp(20px, 3.5vw, 50px);
+    padding-right: clamp(20px, 3.5vw, 50px);
+  }
+
+  .layanan-bawah .row {
+    --bs-gutter-y: 40px;
+  }
+
+  /* ===== Tampilan HP ===== */
+  @media (max-width: 768px) {
+    .popup-daftar {
+      margin-top: 24px;
+      width: 100%;
+      max-width: 260px;
+    }
+  }
